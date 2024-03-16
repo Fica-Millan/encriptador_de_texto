@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Challenges ONE | Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="./index.html"><img class="logo" src="./img/Logo.png" alt="Logo de Alura"></a>
+    </header>
+    <main>
+        <section class="seccion-izquierda">
+            <textarea class="campo-texto" cols="30" rows="9" required placeholder="Ingrese el texto aqui"></textarea>
+            <div class="indicaciones">
+                <img class="icono-exclamacion" src="./img/exclamation-circle.png" alt="signo de exclamacion">
+                <p class="informacion">No utilizar acentos.</p>
+            </div>
+            <div class="botones">
+                <button class="boton btn_encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="boton btn_desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="seccion-derecha" id="seccion-derecha">
+            <img class="munieco" src="./img/Muñeco.jpg" alt="Persona mirando un diamante a través de una lupa.">
+            <p class="seccion-derecha_parrafo1">Ningún mensaje fue <br>encontrado</p>
+            <p class="seccion-derecha_parrafo2">Ingresa el texto que desees encriptar o <br>desencriptar.</p>
+        </section>
+
+        <section class="seccion-encriptada">
+            <textarea class="texto" cols="30" rows="9" ></textarea>
+            <div class="contenedor-copiar">
+                <button class="boton btn_copiar" id="boton-copiar">Copiar</button>
+                <button class="boton btn_limpiar" id="boton-limpiar">Limpiar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section class="design">
+            <p>Code & Design by FiCA</p>
+            <div>
+                <a href="https://www.linkedin.com/in/yesica-fica-millan/" target="_blank">
+                    <img src="./img/Linkedin.png" alt="Logo Linkedin">
+                </a>
+                <a href="https://github.com/Fica-Millan" target="_blank">
+                    <img src="./img/GitHub.png" alt="Logo GitHub">
+                </a>
+            </div>
+        </section>
+    </footer>
+
+    <script src="script.js" defer></script>
+
+    <div id="myModal" class="modal">
+        <!-- Contenido del modal -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Por favor, escriba las palabras sin utilizar acentos.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
