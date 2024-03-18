@@ -292,7 +292,7 @@ footer p {
     font-size: 24px;
   }
 
-  .logo{
+  .logo {
     width: 80px;
   }
 
@@ -310,7 +310,27 @@ footer p {
 
 /* Estilos para dispositivos mas pequeños */
 @media only screen and (max-width: 470px) {
-  .campo-texto{
+  .campo-texto {
     margin-top: 25%;
+  }
+}
+
+
+/* Estilos para una notebook de 15 pulgadas */
+@media only screen and (min-width: 768px) and (max-width: 1365px) {
+  .tu-elemento {
+    max-width: 768px;
+  }
+
+  .munieco{
+    max-width: 200px;
+  }
+
+  .seccion-derecha_parrafo1 {
+    font-size: 0.86em;
+  }
+
+  .seccion-derecha_parrafo2 {
+    font-size: 0.47em;
   }
 }
